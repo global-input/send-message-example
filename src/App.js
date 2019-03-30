@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import GlobalInputConnect from '@bit/globalinput.web.global-input-connect';
-import InputWithLabel from '@bit/globalinput.web.input-with-label';
+import {GlobalInputConnect} from 'global-input-react';
+import InputWithLabel from './components/input-with-label';
 
 import {styles} from './styles';
 const textContent={
