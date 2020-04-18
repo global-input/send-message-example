@@ -4,8 +4,8 @@ This is the source code of [a demo application](https://globalinput.co.uk/global
 ### How to Run
 
 ```
-   git clone https://github.com/global-input/transfer-form-data-example.git
-   cd transfer-form-data-example
+   git clone https://github.com/global-input/send-message-example.git
+   cd send-message-example
    npm install
    npm start
 ```
