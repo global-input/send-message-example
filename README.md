@@ -1,9 +1,14 @@
-## Form Automation Example
-This example application demonstrates how you can use the [the ReactJS library](https://github.com/global-input/global-input-react) to request data on-demand from the [mobile personal storage](https://globalinput.co.uk/global-input-app/mobile-personal-storage). In this solution, you can provide personalized services without collecting user information into your databases.
+## Form Data Transfer
+This is the source code of [a demo application](https://globalinput.co.uk/global-input-app/mobile-encryption), demonstrating how you can use the [Global Input App library](https://github.com/global-input/global-input-react) to achieve [Mobile Authentication](https://globalinput.co.uk/global-input-app/mobile-authentication), [Mobile Input](https://globalinput.co.uk/global-input-app/mobile-input-control), [Mobile Control](https://globalinput.co.uk/global-input-app/mobile-input-control), and [Mobile Content Transfer](https://globalinput.co.uk/global-input-app/mobile-content-transfer) on a React.js application. Your application can request data on-demand from the [Mobile Personal Storage](https://globalinput.co.uk/global-input-app/mobile-personal-storage), so that you can implement personalized services without collecting user information into your databases. The communication between the mobile and your application is secured using end-to-end encryption. 
 
 ### How to Run
-Upon downloading the source code run:
+
 ```
+   git clone https://github.com/global-input/transfer-form-data-example.git
+   cd transfer-form-data-example
    npm install
    npm start
 ```
+   
+
+
