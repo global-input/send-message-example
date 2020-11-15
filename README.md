@@ -9,6 +9,3 @@ This is the source code of [an example](https://globalinput.co.uk/global-input-a
    npm install
    npm start
 ```
-   
-
-
