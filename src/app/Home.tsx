@@ -1,6 +1,6 @@
 import React from "react";
 import { useMobile } from './mobile';
-import { PageContainer, Title, P, SelectionContainer } from './app-layout';
+import { PageContainer, Title, P, SelectionContainer, AppFooter, MessageButton, MessageLink } from './app-layout';
 import DisplayApplicationInfo from './DisplayApplicationInfo';
 
 
@@ -8,9 +8,10 @@ import DisplayApplicationInfo from './DisplayApplicationInfo';
 interface Props {
     companyInfo: () => void;
     sendMessage: () => void;
+    connectionSettings: () => void;
 }
 
-const Home: React.FC<Props> = ({ companyInfo, sendMessage }) => {
+const Home: React.FC<Props> = ({ companyInfo, sendMessage, connectionSettings }) => {
     const initData = {
         form: {
             title: "Mobile Storage Example",
@@ -30,8 +31,21 @@ const Home: React.FC<Props> = ({ companyInfo, sendMessage }) => {
     });
     return (
         <PageContainer>
-            {(!mobile.isConnected) && (<Title>Mobile Secure Storage Example</Title>)}
-            <mobile.ConnectQR />
+            {(!mobile.isConnected) && (
+                <>
+                    <Title>Mobile Secure Storage Example</Title>
+                    <mobile.ConnectQR />
+                    <AppFooter>
+                        <MessageButton label="Settings" onClick={connectionSettings} />
+                        <MessageLink href="https://github.com/global-input/send-message-example">Source Code</MessageLink>
+                    </AppFooter>
+
+                </>
+
+
+
+            )}
+
             {mobile.isConnected && (<>
 
                 <SelectionContainer>
