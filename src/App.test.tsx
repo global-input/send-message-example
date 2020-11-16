@@ -14,8 +14,8 @@ Object.defineProperty(window, 'matchMedia', {
     dispatchEvent: jest.fn(),
   })),
 });
-test('renders learn react link', () => {
+test('renders link', () => {
   render(<App />);
-  const linkElement = screen.getByText(/Global Input App/i);
+  const linkElement = screen.getByText(/Mobile Secure Storage Example/i);
   expect(linkElement).toBeInTheDocument();
 });
